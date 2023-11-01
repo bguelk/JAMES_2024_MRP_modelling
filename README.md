@@ -6,6 +6,8 @@ This repository presents the used model parameters used for the regional NEMO co
 
 # Content
 - Maud12_setup
+  This folder provides information 
+  - EDMF routines
   - full period simulations using the different mixing schemes
   - sensitivity runs:
     - freshwater
