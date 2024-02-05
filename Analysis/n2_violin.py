@@ -10,7 +10,7 @@ from skimage.morphology import disk
 xr.set_options(keep_attrs=True)
 
 # import experiment name from bash script
-exp='tpre02_prsn02_2012'#sys.argv[1]
+exp=sys.argv[1]
 path_in=Path('./')
 year=2016
 

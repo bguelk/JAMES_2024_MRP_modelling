@@ -12,8 +12,8 @@ xr.set_options(keep_attrs=True)
 dim_2D = ("y","x")
 dim_3D = ("t","y","x")
 # import experiment name from bash script
-#import sys
-exp='tpre02_prsn02_2012'#sys.argv[1]
+import sys
+exp=sys.argv[1]
 path_in=Path('./')
 year=2016
 
@@ -21,12 +21,9 @@ bat=xr.open_dataset('../1_domain_cfg_50levels_new.nc')
 bat.coords['nav_lon']=bat.nav_lon
 bat.coords['nav_lat']=bat.nav_lat
 # now split the domain in different regions 
-# maybe try Taylor Cap - Transition - Halo - Domain
-# split the region in 4 parts.
 # The Taylor Column with a shallower than 2500m Bathymetry,
 # the Transition Zone between 2500 m and 3500 m Depth
 # the Halo, 14 grid points outside of the Transition Zone
-# the Remnant, everything else expect, the 10 outest grid points and land
 bat['mask_tc']=np.zeros((len(bat.y),len(bat.x)))*(bat.bathy_meter.where(bat.bathy_meter<2500))+1
 bat['mask_tc']=bat.mask_tc.where(((bat.mask_tc==1)&(bat.glamt<4.3)&(bat.glamt>0.5)&(bat.gphit>-65.5)),other=0)
 mask_tc=bat.mask_tc
