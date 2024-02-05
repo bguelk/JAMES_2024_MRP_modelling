@@ -6,6 +6,7 @@ This repository presents the used model parameters used for the regional NEMO co
 
 # Content
 - Maud12_setup
+
   This folder provides information 
   - EDMF routines
   - decription of model and namelist examples
