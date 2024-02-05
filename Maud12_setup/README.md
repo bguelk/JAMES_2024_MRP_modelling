@@ -16,4 +16,4 @@ Between the different simulations either ln_zdfevd for EVD or ln_zdfmfc for EDMF
 
 
 
-The modified EDMF rountines can be found in EDMF_routines. These routines need to be copied into the MY_SRC of the configuration and renamed  to "zdfmfc.F90" before compilation of the configuration.
+The modified EDMF rountines can be found in EDMF_routines. These routines need to be copied into the MY_SRC of the configuration and renamed  to "zdfmfc.F90" before compilation.
