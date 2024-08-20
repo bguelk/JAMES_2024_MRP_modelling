@@ -2,7 +2,7 @@
 
 * Authors: Birte Gülk, Fabien Roquet, Alberto C. Naveira Garabato, Romain Bourdallé-Badie, Gurvan Madec, Hervé Giordani
 
-This repository presents the used model parameters used for the regional NEMO configuration Maud12, and explains the presented simulations in the paper, which is currently under review at Journal of Advances in Modeling Earth Systems (JAMES).
+This repository presents the used model parameters used for the regional NEMO configuration Maud12, and explains the presented simulations in the paper, which is published in Journal of Advances in Modeling Earth Systems (JAMES) ([https://doi.org/10.1029/2023MS004106](https://doi.org/10.1029/2023MS004106)).
 
 # Content
 - Maud12_setup
